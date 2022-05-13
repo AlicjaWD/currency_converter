@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Kalkulator walutowy</title>
+    <link rel="icon" href="images/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="css/converter.css" rel="stylesheet">
+    <link href="css/form.css" rel="stylesheet">
+    <script defer src="js/converter.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body class="container">
+    <form class="form js-form">
+        <fieldset class="form__fieldset">
+            <legend class="form__legend"> Kalkulator walutowy</legend>
+            <p>
+                <label>
+                    <span class="form__labelText">
+                        Mam (zł)*:
+                    </span>
+                    <input class="form__field js-amount" required type="number" min="0.01" step="any">
+                </label>
+                <label>
+                    <span class="form__labelText">
+                        Kurs:
+                    </span>
+                    <select class="form__field js-currency" name="currency">
+                        <option value="EUR">4.6862 EUR (euro)</option>
+                        <option value="GBP">5.5643 GBP (funt brytyjski)</option>
+                        <option value="USD">4.2245 USD (dolar amerykański)</option>
+                        <option value="CHF">4.5149 CHF (frank szwajcarski)</option>
+                    </select>
+                </label>
+            <p>* pole wymagane</p>
+            </p>
+        </fieldset>
+        <p>
+            <button class="form__button">Przelicz walutę</button>
+    </form>
+    <p> <mark>Twoja kwota wynosi: <strong class="js-result">N/A </strong> </mark></p> 
+
+
+
+</body>
+
+</html>
